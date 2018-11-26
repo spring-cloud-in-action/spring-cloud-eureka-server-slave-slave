@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: eureka-server
+
+server:
+  port: 10003
+eureka:
+  instance:
+    hostname: es.slave.slave.shruochu.com
+  client:
+    service-url:
+      defaultZone : http://es.master.shruochu.com:10001/eureka/, http://es.slave.shruochu.com:10002/eureka/
